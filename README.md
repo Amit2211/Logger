@@ -23,6 +23,7 @@ allprojects {
 Add this dependency at your app-level Gradle file to install Logger in your project.
 
 ```bash
+implementation 'com.github.Amit2211:Logger:1.0'
 ```
 
 ## Sample code
@@ -64,3 +65,5 @@ ArrayList<LoggerDb> list = LoggerDb.readAllFromDatabase(Logger.getDatabase());
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+[![](https://jitpack.io/v/Amit2211/Logger.svg)](https://jitpack.io/#Amit2211/Logger)
