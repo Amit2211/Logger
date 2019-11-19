@@ -10,7 +10,7 @@
 
 Add this line at your project-level Gradle.
 
-```bash
+```Android
 allprojects {
  repositories {
     jcenter()
@@ -22,7 +22,7 @@ allprojects {
 
 Add this dependency at your app-level Gradle file to install Logger in your project.
 
-```bash
+```Android
 implementation 'com.github.Amit2211:Logger:1.0'
 ```
 
@@ -30,7 +30,7 @@ implementation 'com.github.Amit2211:Logger:1.0'
 
 * Initialization
 
-```Java
+```Android
 Logger.with(this, new Logger.Builder()
                 .setLoggable(true)
                 .insertToDb(false)
@@ -41,7 +41,7 @@ Logger.with(this, new Logger.Builder()
 
 * Use and check sample code
 
-```Java
+```Android
 Logger.e(TAG, "run: " + Logger.getInstance().hashCode());
 //hasecode will be same across the application because of its single instance.
 
@@ -55,7 +55,7 @@ Logger.e(TAG, "onCreate:getDbHelper " + Logger.getParams().getDbHelper());
 * LoggerDb is a class that is used to insert logs in the database.
 you can get a list of all logs from its static method as shown below.
 
-```Java
+```Android
 ArrayList<LoggerDb> list = LoggerDb.readAllFromDatabase(Logger.getDatabase());
 ```
 
