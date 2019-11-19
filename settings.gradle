@@ -1,0 +1,2 @@
+include ':sample', ':logger'
+rootProject.name='Custom Logger'
